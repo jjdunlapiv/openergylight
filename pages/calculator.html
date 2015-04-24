@@ -1,0 +1,52 @@
+<div ng-controller="calcController" class="home">
+	<div class="wrap">
+		<div class="info-bar">
+		<a href=""><div class="bck-button" onclick="goBck()">Back</div></a>
+	</div>
+	<div  class="top-with-bar" class="fade-in">
+		<h3>load requirements calculator</h3>
+	</div>
+	<div class="middle-calc">
+		<form>
+			<div>
+			Volts:
+		</div>
+		<div>
+			<input type="text" name="volts" id="volts" />
+		</div>
+		<div>
+		    Amps:
+			</div>
+			<div>
+				<input type="text" name="amps" id="amps"/>
+			</div>
+
+			<div>
+		    <select id="loadTypes">
+				<option value="spi">Single Phase Inductive (Motors)</option>
+				<option value="tpi">Three Phase Inductive (Motors)</option>
+				<option value="sp">Single Phase</option>
+				<option value="tp">Three Phase</option>
+		 	</select>
+		</div>
+
+				<div>
+				<button type="button" id="calcBtn">Calculate</button>
+			</div>
+				<div>
+		    Total Power (kW) Requirement:
+			</div>
+
+			<div>
+		    <input type="text" disabled="disabled" name="totalPower" id="totalPower" />
+			</div>
+
+		</fieldset>
+		</form>
+	</div>
+
+	<div class="bottom">
+
+	</div>
+</div>
+</div>
